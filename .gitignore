@@ -1,0 +1,14 @@
+/target
+training_manual/book
+
+cpp/hello_world/build
+cpp/double_fn/build
+cpp/type_changes/build
+cpp/array_bounds/build
+cpp/byte_overflow/build
+cpp/dead_ref/build
+cpp/move/build
+cpp/nullptr/build
+cpp/data_race/build
+cpp/atomics/build
+cpp/mutex/build

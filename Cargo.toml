@@ -1,0 +1,119 @@
+[package]
+name = "kla_dec2023"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[workspace]
+members = [
+    # Part 2: Rust Ecosystem
+    "projects/part2/hello_world", # Accompanies hello_world.md
+    "projects/part2/double_fn", # Accompanies functions.md
+    "projects/part2/simple_bench", # Accompanies benchmarking.md
+    "projects/part2/criterion_bench", # Accompanies benchmarking.md
+    "projects/part2/no_null", # Accompies memory_safety.md
+    "projects/part2/destructors", # Accompanies borrow_checker.md
+    "projects/part2/refcount", # Accompanies rc.md
+    "projects/part2/atomics", # Accompanies data_race_protection.md
+    "projects/part2/mutex", # Accompanies data_race_protection.md
+    "projects/part2/unsafe_threading", # Accompanies safety_opt_out.md
+    "projects/part2/unit_test", # Accompanies unit_tests.md
+
+    # Part 3: Workship - build a basic Rust system
+    "projects/part3/login_lib_text", # Accompanies workshop1_text_input
+    "projects/part3/login_text", # Accompanies workshop1_text_input
+    "projects/part3/login_lib_simple", # Accompanies workshop1_basic_login.md
+    "projects/part3/login_simple", # Accompanies workshop1_basic_login.md
+    "projects/part3/login_lib_enum", # Accompanies workshop1_enums.md
+    "projects/part3/login_enum", # Accompanies workshop1_enums.md
+    "projects/part3/login_lib_enum_data", # Accompanies workshop1_enums.md
+    "projects/part3/login_enum_data", # Accompanies workshop1_enums.md
+    "projects/part3/login_lib_enum_option", # Accompanies workshop1_enums.md
+    "projects/part3/login_enum_option", # Accompanies workshop1_enums.md
+    "projects/part3/login_lib_struct", # Accompanies workshop1_datastructures.md
+    "projects/part3/login_struct", # Accompanies workshop1_datastructures.md
+    "projects/part3/login_lib_vec", # Accompanies workshop1_datastructures.md
+    "projects/part3/login_vec", # Accompanies workshop1_datastructures.md
+    "projects/part3/login_lib_hashmap", # Accompanies workshop1_datastructures.md
+    "projects/part3/login_hashmap", # Accompanies workshop1_datastructures.md
+    "projects/part3/login_lib_json", # Accompanies workshop1_serde.md
+    "projects/part3/login_json", # Accompanies workshop1_serde.md
+    "projects/part3/login_lib_hash", # Accompanies workshop1_hashing.md
+    "projects/part3/login_hash", # Accompanies workshop1_hashing.md
+    "projects/part3/login_manager", # Acocmpanies workshop1_clap.md
+
+    # Part 4: Threads
+    "projects/part4/first_thread",
+    "projects/part4/thread_closures",
+    "projects/part4/thread_return",
+    "projects/part4/divide_workload",
+    "projects/part4/scoped_threads",
+    "projects/part4/thread_builder",
+    "projects/part4/data_race",
+    "projects/part4/atomic_counter",
+    "projects/part4/atomic_counter_timed",
+    "projects/part4/mutex",
+    "projects/part4/mutex_timed",
+    "projects/part4/rwlock",
+    "projects/part4/parking",
+    "projects/part4/lockfree_map",
+    "projects/part4/deadlocks",
+    "projects/part4/mutex_poisoning",
+    "projects/part4/mpsc",
+    "projects/part4/mpsc_ownership",
+    "projects/part4/mpsc_ownership_timed",
+    "projects/part4/sending_functions",
+    "projects/part4/sending_commands_and_functions",
+    "projects/part4/work_queue",
+    "projects/part4/thread_affinity",
+    "projects/part4/thread_priorities",
+    "projects/part4/rayon_par_iter",
+    "projects/part4/rayon_scopes",
+    "projects/part4/rayon_nested_pools",
+    "projects/part4/rayon_broadcast",
+    "projects/part4/rayon_join",
+
+    # Part 5: Async/Await
+    "projects/part5/hello_async_futures",
+    "projects/part5/hello_async_spawn_futures",
+    "projects/part5/tokio_single_thread_manual",
+    "projects/part5/tokio_single_thread_macro",
+    "projects/part5/tokio_mt_manual",
+    "projects/part5/tokio_mt_macro",
+    "projects/part5/tokio_await",
+    "projects/part5/tokio_thread_sleep",
+    "projects/part5/tokio_spawn_blocking",
+    "projects/part5/tokio_unit_tests",
+    "projects/part5/rust_errors1",
+    "projects/part5/rust_errors2",
+    "projects/part5/rust_errors3",
+    "projects/part5/rust_errors_async",
+    "projects/part5/buffered_reader",
+    "projects/part5/weather",
+    "projects/part5/tcp_echo",
+    "projects/part5/tcp_echo_client",
+    "projects/part5/sync_channel",
+    "projects/part5/sync_channel_reply",
+    "projects/part5/broadcast",
+    "projects/part5/async_mutex",
+    "projects/part5/select_timeout",
+    "projects/part5/select_channels",
+    "projects/part5/recursion",
+    "projects/part5/pinning",
+    "projects/part5/tokio_tracing",
+    "projects/part5/tokio_console_demo",
+
+    # Part 6: Traits/Generics
+    "projects/part6/make_trait",
+    "projects/part6/trait_generic",
+    "projects/part6/hashmap_bucket",
+
+    # Part 7: Service in 30 Minutes
+    "projects/part7/database",
+    "projects/part7/hello_web",
+    "projects/part7/thumbnail_server",
+
+]

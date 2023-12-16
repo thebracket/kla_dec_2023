@@ -117,3 +117,7 @@ members = [
     "projects/part7/thumbnail_server",
 
 ]
+
+exclude = [
+    "projects/docker/hello_web_docker",
+]

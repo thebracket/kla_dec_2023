@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <script src="./wasm_lib.js"></script>
+    <script>
+      window.addEventListener("load", async () => {
+        await wasm_bindgen("./wasm_lib_bg.wasm");
+        wasm_bindgen.hello_js();
+        console.log(wasm_bindgen.add(5, 10));
+        console.log(wasm_bindgen.greet("Herbert"));
+        console.log(wasm_bindgen.sum([1, 2, 3, 4]));
+      });
+    </script>
+  </body>
+</html>

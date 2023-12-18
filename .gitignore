@@ -14,3 +14,4 @@ cpp/atomics/build
 cpp/mutex/build
 
 projects/docker/hello_web_docker/target
+projects/wasm/wasm_lib/target

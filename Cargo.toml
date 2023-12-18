@@ -116,6 +116,10 @@ members = [
     "projects/part7/hello_web",
     "projects/part7/thumbnail_server",
 
+    # Part 10: FFI
+    "projects/part10/rust_c",
+    "projects/part10/c_rust",
+
     # WASM
     "projects/wasm/wasm_web_server",
 ]

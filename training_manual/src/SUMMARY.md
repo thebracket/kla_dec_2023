@@ -98,3 +98,4 @@
     - [Memory Fragmentation](./optimize_memory.md)
     - [Zero Copy](./optimize_zerocopy.md)
 - [WASM for the Browser](./wasm_browser.md)
+- [WASM for WASI](./wasm_wasi.md)

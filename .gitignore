@@ -15,3 +15,4 @@ cpp/mutex/build
 
 projects/docker/hello_web_docker/target
 projects/wasm/wasm_lib/target
+projects/wasm/wasi_hello_world/target

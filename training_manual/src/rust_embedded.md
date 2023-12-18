@@ -2,8 +2,6 @@
 
 There's a lot of different types of embedded out there. "Embedded" can mean a full-featured Raspberry PI 4---or a tiny microcontroller. Different platforms will have differing levels of support for embedded Rust. LLVM currently bounds which platforms you can target; Rust on GCC is advancing rapidly but isn't ready for production yet.
 
-> TODO: This still needs example code.
-
 # Minimizing Binary Size
 
 For size-constrained builds, Rust has a lot of options:

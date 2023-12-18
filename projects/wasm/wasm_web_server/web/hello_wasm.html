@@ -1,17 +1,33 @@
 <html>
-  <head>
+
+<head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-  </head>
-  <body>
+</head>
+
+<body>
     <script src="./wasm_lib.js"></script>
     <script>
-      window.addEventListener("load", async () => {
-        await wasm_bindgen("./wasm_lib_bg.wasm");
-        wasm_bindgen.hello_js();
-        console.log(wasm_bindgen.add(5, 10));
-        console.log(wasm_bindgen.greet("Herbert"));
-        console.log(wasm_bindgen.sum([1, 2, 3, 4]));
-      });
+        window.addEventListener("load", async () => {
+            await wasm_bindgen("./wasm_lib_bg.wasm");
+            wasm_bindgen.hello_js();
+            console.log(wasm_bindgen.add(5, 10));
+            console.log(wasm_bindgen.greet("Herbert"));
+            console.log(wasm_bindgen.sum([1, 2, 3, 4]));
+
+            let person = new wasm_bindgen.Person("Herbert", 48);
+            console.log(person.greet());
+            console.log(person.age);
+            console.log(person.get_age());
+
+            let person_json = wasm_bindgen.serialize_person(person);
+            let person_deserialized = JSON.parse(person_json);
+            console.log(person_deserialized);
+
+            wasm_bindgen.fetch_hello_json().then((result) => {
+                console.log(result);
+            });
+        });
     </script>
-  </body>
+</body>
+
 </html>

@@ -8,3 +8,4 @@ On Visual Studio Code, you need the `CodeLLDB` extension.
 
 > Confession: I don't actually do a lot of single-step, breakpoint debugging. I tend to emit tracing messages and use those for debugging unless I'm really, really stuck!
 
+Quick walkthrough of using both debuggers.

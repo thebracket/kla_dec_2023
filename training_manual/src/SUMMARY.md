@@ -11,7 +11,7 @@
     - [Memory Safety](./memory_safety.md)
     - [The Borrow Checker](./borrow_checker.md)
     - [Lifetimes](./lifetimes.md)
-    - [Reference Counting - Borrow Checker Escape Hatch](rc.md)
+    - [Reference Counting - Borrow Checker Escape Hatch](rc_intro.md)
     - [Data-Race Protection](./data_race_protection.md)
     - [Opt-Out vs Opt-In Safety](./safety_opt_out.md)
     - [Safety Wrap-Up](./safety_summary.md)
@@ -99,3 +99,4 @@
     - [Zero Copy](./optimize_zerocopy.md)
 - [WASM for the Browser](./wasm_browser.md)
 - [WASM for WASI](./wasm_wasi.md)
+- [Macros](./macros.md)
